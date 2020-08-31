@@ -1,0 +1,256 @@
+#login_header .hd_logo {
+  width: 1130px;
+  height: 98px;
+  margin: 0 auto;
+}
+
+#login_header .hd_logo a {
+  width: 200px;
+  height: 98px;
+  display: block;
+  background: url(../images/mistore_logo.png);
+}
+
+#login_banner {
+  height: 588px;
+  background: url(../images/login.jpg);
+  background-position: top center;
+}
+
+#login_banner .layout {
+  width: 1130px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#login_banner .layout #mainbox {
+  width: 410px;
+  height: 560px;
+  margin-top: 28px;
+  background: #fff;
+  float: right;
+}
+
+#login_banner .layout #mainbox .nav_tabs {
+  font-size: 24px;
+  color: #666;
+  padding: 27px 0 24px;
+  text-align: center;
+}
+
+#login_banner .layout #mainbox .nav_tabs a {
+  color: #666;
+}
+
+#login_banner .layout #mainbox .nav_tabs a:first-child {
+  color: #f56600;
+}
+
+#login_banner .layout #mainbox .nav_tabs span {
+  width: 1px;
+  height: 24px;
+  margin: 0 35px 0 42px;
+  border: 1px solid #e0e0e0;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 {
+  width: 348px;
+  margin: 0 auto;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .log_input input {
+  display: block;
+  width: 306px;
+  height: 22px;
+  line-height: 22px;
+  padding: 13px 16px 13px 14px;
+  color: #4a4a4a;
+  outline: none;
+  margin-bottom: 14px;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .err_tip {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #f66;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .err_tip em {
+  width: 14px;
+  height: 14px;
+  margin: -1px 5px 0 0;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/err01.png) no-repeat;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .err_tip span {
+  vertical-align: middle;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .btn_bg input {
+  background-color: #ff6700;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel {
+  text-align: center;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel > p {
+  margin-bottom: 30px;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel > p a {
+  color: #ff6700;
+  font-size: 14px;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .reverse {
+  color: #999;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .reverse a {
+  color: #999;
+  font-size: 14px;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .other_login {
+  padding-top: 133px;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .other_login legend {
+  padding-top: 10px;
+  color: #bbb;
+  font-size: 14px;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .other_login .log_link {
+  padding-top: 20px;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .other_login .log_link a {
+  display: inline-block;
+  background: red;
+  margin: 0 17px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .other_login .log_link a:nth-child(1) {
+  background: #0288d1;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .other_login .log_link a:nth-child(2) {
+  background: #d32f2f;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .other_login .log_link a:nth-child(3) {
+  background: #0ae;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .other_login .log_link a:nth-child(4) {
+  background: #00d20d;
+}
+
+#login_banner .layout #mainbox .loginbox .login1 .other_panel .other_login .log_link .iconfont {
+  font-size: 20px;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 {
+  display: none;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .login_img {
+  padding: 80px 0 40px 0;
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .login_img a {
+  width: 180px;
+  height: 180px;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .login_img a img {
+  width: 100%;
+  height: 100%;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .mi_app {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .apps {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .apps a {
+  display: inline-block;
+  min-width: 40px;
+  max-width: 60px;
+  overflow: hidden;
+  margin: 0 16px;
+  color: #888;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .apps a i {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .apps a:nth-child(1) i {
+  background: url(../images/icon_apps.png);
+  background-position: -32px 0;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .apps a:nth-child(2) i {
+  background: url(../images/icon_apps.png);
+  background-position: -32px -32px;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .apps a:nth-child(3) i {
+  background: url(../images/icon_apps.png);
+  background-position: 0 -32px;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .apps a span {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .custom {
+  text-align: center;
+  padding-top: 14px;
+  font-size: 14px;
+  color: #666;
+}
+
+#login_banner .layout #mainbox .loginbox .login2 .custom span {
+  color: #ff6700;
+}

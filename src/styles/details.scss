@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+#nav_bar{
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 5px 5px rgba(0,0,0,.07);
+    height: 63px;
+    h2{
+        float: left;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 60px;
+        color: #424242;
+        float: left;
+    }
+    a{
+        margin-top: 20px;
+        float: right;
+        color: #616161;
+        font-size: 14px;
+        &:hover{
+            color: #ff6700;
+        }
+    }
+}
+
+#mi_detail{
+    width: 100%;
+    .page{
+        // <!-- 商品详情 -->
+        .page_info{
+            .product_box{
+                padding: 32px 0 12px;
+                .img-left{
+                    width: 560px;
+                    height: 566px;
+                    background: pink;
+                    .slide{
+                        width: 100%;
+                        height: 460px;
+                        position: relative;
+                        .imgbox{
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        span {
+                            position: absolute;
+                            top: 45%;
+                            width: 50px;
+                            height: 70px;
+                            color: rgba(173, 168, 168, 0.6);
+                            line-height: 70px;
+                            text-align: center;
+                            font-size: 3em;
+                            cursor: pointer;
+                            user-select: none;
+                            transform: translateY(-50%);
+                            &:first-of-type {
+                                left: 10px;
+                            }
+                            &:last-of-type {
+                                right: 10px;
+                            }
+                            &:hover{
+                                background: rgba(105,101,101,.6);
+                                color: #fff;
+                            }
+                        }
+                        ul {
+                            position: absolute;
+                            bottom: -20px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            height: 20px;
+                            line-height: 20px;
+                            margin: 0 auto;
+                            display: inline-block;
+                            li{
+                                list-style: none;
+                                float: left;
+                                width: 50px;
+                                height: 3px;
+                                background: #5a5f5f;
+                                margin: 0 5px;
+                                cursor: pointer;
+                                user-select: none;
+                                &:nth-child(1) {
+                                    background: red;
+                                }
+                            }
+                        }  
+                          
+                    }
+                }
+                .product-con{
+                    width: 600px;
+                    margin-left: 20px;
+                    >h2{
+                        font-size: 24px;
+                        color: #212121;
+                        font-weight: 400;
+                    }
+                    .sale_desc{
+                        color: #b0b0b0;
+                        line-height: 1.5;
+                        padding-top: 8px;
+                    }
+                    .mi_title{
+                        color: #ff6700;
+                        margin-top: 10px;
+                    }
+                    .priceinfo{
+                        color: #ff6700;
+                        font-size: 18px;
+                        line-height: 1;
+                        padding: 12px 0 10px  0;
+                        del{
+                            font-size: 14px;
+                            margin-left: 5px;
+                            color: #b0b0b0;
+                        }
+                    }
+                    .line{
+                        margin-top: 12px;
+                        border-bottom: 1px solid #e0e0e0;
+                    }
+                    .addres_box{
+                        margin: 20px 0;
+                        padding: 30px 50px;
+                        position: relative;
+                        background: #fafafa;
+                        border: 1px solid #e0e0e0;
+                        font-size: 14px;
+                        i{
+                            position: absolute;
+                            left: 24px;
+                            top: 32px;
+                            color: #d4d0d0;
+                        }
+                        .addres_con{
+                            >div{
+                                color: #333;
+                                div span{
+                                    margin-right: 14px;
+                                }
+                                a{
+                                    color: #ff6700;
+                                    margin-left: 24px;
+                                }
+                            }
+                            >p{
+                                color: #ff6700;
+                            }
+                        }
+                    }
+                    .opction_box{
+                        margin-bottom: 30px;
+                        .title{
+                            color: #333;
+                            font-size: 18px;
+                        }
+                        .item{
+                            width: 292px;
+                            height: 42px;
+                            line-height: 42px;
+                            border: 1px solid #ff6700;
+                            color: #ff6700;
+                            text-align: center;
+                            margin-top: 10px;
+                        }
+                    }
+                    .selected{
+                        padding: 30px;
+                        margin-bottom: 30px;
+                        background: #f9f9fa;
+                        div{
+                            line-height: 30px;
+                            color: #616161;
+                            span{
+                                float: right;
+                                del{
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                        p{
+                            color: #ff6700;
+                            font-size: 24px;
+                            padding-top: 20px;
+                        }
+                    }
+                    .btn_box{
+                        display: inline-block;
+                        margin: 0 0 20px 0;
+                        .sale_btn{
+                            margin-right: 10px;
+                            a{
+                                display: block;
+                                width: 298px;
+                                height: 52px;
+                                line-height: 52px;
+                                color: #fff;
+                                text-align: center;
+                                background: #ff6700;
+                                border: 1px solid #b0b0b0;
+                                // font-size: 14px;
+                            }
+                        }
+                        .favorite_btn{
+                            a{
+                                display: block;
+                                width: 140px;
+                                height: 52px;
+                                line-height: 52px;
+                                color: #fff;
+                                text-align: center;
+                                background: #b0b0b0;
+                                border: 1px solid #b0b0b0;
+                                // font-size: 14px;
+                                i{
+                                    font-size: 22px;
+                                    line-height: 23px;
+                                    vertical-align: -4px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                    .sale_info{
+                        span{
+                            display: inline-block;
+                            font-size: 14px;
+                            a{
+                                display: inline-block;
+                                margin-right: 15px;
+                                line-height: 30px;
+                                margin-bottom: 10px;
+                                cursor: default;
+                                white-space: nowrap;
+                                color: #b0b0b0;
+                                i{
+                                    font-size: 20px;
+                                    display: inline-block;
+                                    font-style: normal;
+                                    vertical-align: middle;
+                                }
+                                em{
+                                    font-style: normal;
+                                    display: inline-block;
+                                    margin-left: 2px;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // <!-- 商品图片展示 -->
+        .page_main{
+            background: #F5F5F5;
+            padding-bottom: 30px;
+            .img_box{
+                .img_item{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -44,67 +44,9 @@ html{
                 margin: 0 auto;
                 line-height: 20px;
             }
-            h4{
-                font-size: 14px;
-                color: #333;
-                padding-bottom: 5px;
-                font-weight: normal;
-            }
-            .select_region{
-                width: 318px;
-                height: 40px;
-                line-height: 40px;
-                border: 1px solid #e8e8ee;
-                padding-left: 14px;
-                p{
-                    float: left;
-                    width: 275px;
-                    border-right: 1px solid #e8e8ee;
-                    cursor: pointer;
-                }
-                i{
-                    float: left;
-                    background: url(../images/icon_user.png) no-repeat;
-                    width: 16px;
-                    height: 16px;
-                    margin: 11px 12px 0 12px;
-                }
-            }
-            .reg_tip_text{
-                margin: 8px 0 15px;
-                color: #666;
-                font-size: 14px;
-            }
-            .labelbox{
-                    width: 330px;
-                    height: 42px;
-                    border: 1px solid #e8e8e8;
-                    line-height: 42px;
-                    label{
-                        height: 40px;
-                        padding-left: 14px;
-                        line-height: 40px;
-                        line-height: 40px;
-                        width: 54px;
-                        
-                    }
-                    input{
-                        
-                        float: right;
-                        width: 240px;
-                        height: 22px;
-                        line-height: 22px;
-                        padding: 10px;
-                        display: inline-block;
-                        color: #333;
-                        outline: none;
-                        border: 0;
-                        border-left: 1px solid #e8e8e8;
-                    }
-            }
             .err_tip{
-                margin-top: 8px;
-                margin-bottom: 5px;
+                margin-top: 5px;
+                margin-bottom: 10px;
                 line-height: 20px;
                 font-size: 14px;
                 color: #f66;
@@ -135,7 +77,174 @@ html{
                     background-color: #ff6700;
                     margin-top: 15px;
                     color: #fff;
+                    outline: none;
                     border: 1px solid rgba(186,186,186,.3);
+                }
+            }
+            // step1 
+            .reg_step1{
+                display: block;
+                h4{
+                    font-size: 14px;
+                    color: #333;
+                    padding-bottom: 5px;
+                    font-weight: normal;
+                }
+                .select_region{
+                    width: 318px;
+                    height: 40px;
+                    line-height: 40px;
+                    border: 1px solid #e8e8ee;
+                    padding-left: 14px;
+                    p{
+                        float: left;
+                        width: 275px;
+                        border-right: 1px solid #e8e8ee;
+                        cursor: pointer;
+                        color: #555;
+                    }
+                    i{
+                        float: left;
+                        background: url(../images/icon_user.png) no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        margin: 11px 12px 0 12px;
+                    }
+                }
+                .reg_tip_text{
+                    margin: 8px 0 15px;
+                    color: #666;
+                    font-size: 14px;
+                }
+                .labelbox{
+                        width: 330px;
+                        height: 42px;
+                        border: 1px solid #e8e8e8;
+                        line-height: 42px;
+                        label{
+                            height: 40px;
+                            padding-left: 14px;
+                            line-height: 40px;
+                            line-height: 40px;
+                            width: 54px;
+                            
+                        }
+                        input{
+                            
+                            float: right;
+                            width: 240px;
+                            height: 22px;
+                            line-height: 22px;
+                            padding: 10px;
+                            display: inline-block;
+                            color: #333;
+                            outline: none;
+                            border: 0;
+                            border-left: 1px solid #e8e8e8;
+                        }
+                }
+            }
+            // step2 
+            .reg_step2{
+                display: none;
+                .step2_title{
+                    padding-bottom: 20px;
+                    div{
+                        color: #333333;
+                        font-size: 15px;
+                        font-weight: bold;
+                        span{
+                            color: #ff6700;
+                            font-size: 14px;
+                        }
+                    }
+                    p{
+                        color: #666;
+                        font-size: 14px;
+                    }
+                }
+                .inputsend{
+                    display: inline-block;
+                    padding-top: 2px;
+                    height: 40px;
+                    line-height: 42px;
+                    border: 1px solid #f66 !important;
+                    input{
+                        height: 20px;line-height: 20px;
+                        width: 190px;
+                        padding: 10px;
+                        display: inline-block;
+                        color: #333;
+                        outline: 0 none;
+                        border: 0;
+                        float: left;
+                    }
+                    span{
+                        float: left;
+                        margin-left: 8px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 14px;
+                        a{
+                            display: inline-block;
+                            padding:0 10px;
+                            color: rgb(66, 64, 64);
+                            i{
+                                font-style: normal;
+                            }
+                        }
+                    }
+                }
+                .uncode{
+                    font-size: 14px ;
+                    a{
+                        color: #46639c;
+                    }
+                }
+                .fixed_bot{
+                    input{
+                        &:last-child{
+                            background: #fff;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+            .reg_step3{
+                display: none;
+                .step3_title{
+                    padding-bottom: 20px;
+                    div{
+                        color: #666;
+                        font-size: 14px;
+                        font-weight: bold;
+                        span{
+                            color: #ff6700;
+                            font-size: 14px;
+                        }
+                    }
+                    p{
+                        color: #666666;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+                .input_box{
+                    input{
+                        width: 310px;
+                        height: 20px;
+                        line-height: 20px;
+                        padding: 10px;
+                        color: #333333;
+                        // outline: none;
+                        border: 0;
+                    }
+                    .set_password1,.set_password2{
+                        border: 1px solid #f66 !important;
+                    }
+                    .set_password1{
+                        margin-bottom: 15px;
+                    }
                 }
             }
         }
@@ -146,6 +255,7 @@ html{
             label{
                 padding: 10px 0;
                 color: #9d9d9d;
+                font-size: 14px;
                 a{
                     color: #333;
                     font-weight: bold;

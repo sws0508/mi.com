@@ -11,7 +11,6 @@
 }
 
 // 二级标题
-
 .head{
     position: relative;
     .hd_h2{
@@ -120,6 +119,372 @@
                 box-shadow: 0 15px 30px rgba(0,0,0,.1);
                 transform: translate3d(0,-1px,0);
             }
+        }
+    }
+}
+
+// 顶部公共内容
+header{
+    #topbar{
+        width: 100%;
+        height: 120px;
+        a{
+            display: block;
+            height: 120px;
+            background: url(../images/topbar.jpg) no-repeat;
+            background-position-x: 50%;
+            background-size: auto 120px;
+        }
+    }
+    #site-topbar{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background: #333;
+        font-size: 12px;
+
+        .container{
+            .topbar_nav,.topbar_userInfo{
+                a{
+                    display: inline-block;
+                    float: left;
+                    color: #b0b0b0;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    float: left;
+                    color: #424224;
+                    margin: 0 7px;
+                }
+            }
+            .topbar_userInfo{
+                margin-right: 20px;
+            }
+            .topbar_cart{
+                .cart_min{
+                    display: block;
+                    width: 120px;
+                    height: 40px;
+                    background: #424242;
+                    color: #b0b0b0;
+                    text-align: center  ;
+                    // em{
+                    //     line-height: 40px;
+                    // }
+                    &:hover{
+                        color: #ff6700;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+    #site-header{
+        position: relative;
+        height: 100px;
+        .header_logo{
+            padding-top: 22px;
+            a{
+                display: block;
+                width: 55px;
+                height: 55px;
+                overflow: hidden;
+                p{
+                    width: 110px;
+                    height: 100%;
+                    em{
+                        float: left;
+                        width: 55px;
+                        height: 55px;
+                        background: #ff6700 url(../images/mi-logo.png) no-repeat 50% 50%;
+                    }
+                    span{
+                        float: left;
+                        width: 55px;
+                        height: 55px;
+                        background: #ff6700 url(../images/mi-home.png) no-repeat 50% 50%;
+                    }
+                }
+                &:hover p{
+                    transform: translateX(-55px);
+                    
+                }
+            }
+        }
+        .header_nav{
+            margin-left: 179px;
+            .nav_list{
+                padding-top: 12px;
+
+                // .list_box{
+                //     position: absolute;
+                //     left: 0;
+                //     top: 100px;
+                //     width: 100%;
+                //     height: 300px;
+                //     border:1px solid #b0b0b0;
+                //     background: red;
+                //     display: none;
+                // }
+
+                li{
+                    float: left;
+                    a{
+                        transition:width 2s;
+                        display: inline-block;
+                        padding: 26px 10px 41px;
+                        color: #333333;
+                        span{
+                            line-height: 0;
+                            font-size: 16px;
+                        }
+                        &:hover{
+                            color: #ff6700;
+                        }
+                    }
+                    .list_box{
+                        position: absolute;
+                        width: 100%;
+                        height: 0;
+                        transition:width 2s;
+                        left: 0;
+                        background: pink;
+                        z-index: 200;
+                        display: none;
+                    }
+                    &:hover .list_box{
+                        display: block 
+                        !important;
+                        height: 250px;
+                    }
+                }
+                
+                
+                
+            }
+
+        }
+        .header_search{
+            margin-top: 25px;
+            .text{
+                width: 243px;
+                height: 48px;
+                outline: 0;
+                border: 1px solid #e0e0e0;
+                padding: 0 10px;
+            }
+            div{
+                position: relative;
+                .btn{
+                    width: 52px;
+                    height: 50px;
+                    border: 1px solid #e0e0e0;
+                    background: #ff6700;
+                    outline: 0;
+                    &:hover{
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+                em{
+                    position: absolute;
+                    font-size: 26px;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-13px,-13px);
+                }
+            }
+        }
+    }
+}
+
+// 页面底部
+// footer
+footer{
+    .footer_service{
+        padding: 27px 0;
+        border-bottom: 1px solid #e0e0e0;
+        .list_service{
+            li{
+                float: left;
+                height: 25px;
+                width: 19.8%;
+                line-height: 25px;
+                font-size: 16px;
+                text-align: center;
+                border-right: 1px solid #c0c0c0;
+                a{
+                    color: #616161;
+                    &:hover{
+                        color: #ff6709;
+                    }
+                }
+                &:last-child{
+                    border-right: 0;
+                }
+            }
+        }
+    }
+    .footer_links{
+        padding: 40px 0;
+        dl{
+            float: left;
+            width: 160px;
+            dt{
+                font-size: 14px;
+                 color:#302c2c;
+                 margin-bottom: 26px;
+            }
+            dd{
+                font-size: 12px;
+                margin-top: 10px;
+                a{
+                    color: #757575;
+                    &:hover{
+                        color: #ff6700;
+                    }
+                }
+
+            }
+        }
+        div{
+            float: right;
+            width: 251px;
+            border-left: 1px solid #e0e0e0;
+            text-align: center;
+            color: #616161;
+            p{
+                margin-bottom: 5px;
+                font-size: 12px;
+            }
+            .phone{
+                font-size: 22px;
+                color: #ff6700;
+                line-height: 1;
+                margin-bottom: 5px;
+
+            }
+            .kf{
+                display: inline-block;
+                width: 118px;
+                height: 28px;
+                line-height: 28px;
+                font-size: 12px;
+                border: 1px solid #ff6700;
+                color: #ff6700;
+            }
+            .follow{
+                font-size: 12px;
+                margin-top: 10px;
+                a{
+                    background: url(../images/wb.png) no-repeat 50% 0;
+                    background-size: cover;
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    vertical-align: middle;
+                    margin-left: 6px;
+                    margin-top: -3px;
+                }
+            }
+            
+        }
+
+    }
+    .footer_info{
+        height: 200px;
+        font-size: 12px;
+        padding: 20px 0;
+        background: #fafafa;
+        
+        .container{
+            position: relative;
+        }
+        .footer_logo{
+            width: 57px;
+            height: 57px;
+            margin-right: 10px;
+            background: url(../images/logo-footer.png) no-repeat 50% 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .info_text{
+            padding-left: 67px;
+            line-height: 18px;
+            font-size: 12px;
+            
+            .sites{
+                a{
+                    color: #757575;
+                    &:hover{
+                        color: #ff6700;
+                    }
+                }
+                span{
+                    color: #b0b0b0;
+                }
+            }
+            .copy{
+                color: #b0b0b0;
+                a{
+                    color: #b0b0b0;
+                    &:hover{
+                        color: #ff6700;
+                    }
+                }
+            }
+        }
+        .info_link{
+            height: 28px;
+            margin-top: 20px;
+            padding-left: 67px;
+            a{
+                float: left;
+                img{
+                    width: 83px;
+                    height: 28px;
+                }
+            }
+        }
+        
+        .slogan{
+            clear: both;
+            margin: 30px auto 0;
+            width: 100%;
+            height: 19px;
+            background: url(../images/slogan2020.png) no-repeat center 0;
+        }
+    }
+}
+
+// 侧边定位模块
+.tool{
+    position: fixed;
+    bottom: 180px;
+    right: 0;
+    z-index: 99;
+    >a{
+        display: block;
+        width: 82px;
+        height: 90px;
+        margin-top: -1px;
+        background-color: #fff;
+        border: 1px solid #f5f5f5;
+        text-align: center;
+        color:#757575;
+        div{
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 8px;
+            padding-top: 18px;
+            font-size:30px;
+        }
+        &:hover{
+            color: #ff6700;
         }
     }
 }

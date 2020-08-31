@@ -19,6 +19,9 @@ img{
     display: block;
     border: 0;
 }
+em,i{
+    font-style: none;
+}
 .clear_fix:after{
     content: ".";
     clear: both;
