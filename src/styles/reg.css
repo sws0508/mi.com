@@ -58,11 +58,11 @@ html {
 }
 
 .wrapper #layout .form .err_tip em {
+  display: inline-block;
   width: 14px;
   height: 14px;
   margin: -1px 5px 0 0;
   overflow: hidden;
-  display: inline-block;
   vertical-align: middle;
   background: url(../images/err01.png) no-repeat;
 }

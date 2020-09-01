@@ -21,3 +21,45 @@ $("img.lazy").lazyload({
     // failurelimit: 10 // 图片排序混乱时
     // failurelimit,值为数字.lazyload默认在找到第一张不在可见区域里的图片时则不再继续加载,但当HTML容器混乱的时候可能出现可见区域内图片并没加载出来的情况,failurelimit意在加载N张可见区域外的图片,以避免出现这个问题.
 });
+
+$(function(){
+    $.ajax({
+        type: "get",
+        url: "../interface/getproduct.php",
+        dataType: "json",
+        success: function (res) {
+             let temp = '';
+             console.log(res)
+             res.forEach((elm,i)=> {
+                 let picture = JSON.parse(elm.picture);
+                 
+                 console.log(picture[0].src);
+                temp += `<li>
+                <a href="./details.html?id=${elm.id}">
+                    <div class="img">
+                        <img class="lazy" data-original="..${picture[0].src}" alt="">
+                    </div>
+                    <h3>${elm.title}</h3>
+                    <p class="desc">${elm.title.split(" ")[0]}</p>
+                    <p class="price">${elm.price}元起</p>
+                </a>
+            </li>
+                `
+             });
+             $("#list").append(temp);
+        }
+    });
+
+
+})
+
+{/* <li>
+<a href="">
+    <div class="img">
+        <img class="lazy" data-original="../images/zhineng01.webp" alt="">
+    </div>
+    <h3>米家驱蚊基础版 3个装 白色</h3>
+    <p class="desc">三个装 长效驱蚊</p>
+    <p class="price">5299元起</p>
+</a>
+</li> */}
