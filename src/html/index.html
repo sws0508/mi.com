@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>小米首页</title>
     <!-- css_link -->
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/content.css">
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2032331_wfx6d5rizj.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2032331_shce8bqeh1.css">
 
     <!-- js_link -->
     <script src="../js/index.js" type="module"></script>
@@ -131,12 +131,15 @@
     <div id="home" class="container">
         <div class="slide">
             <div class="imgbox">
-                <a href=""><img class="lazy" data-original="../images/banner.jpg" alt=""></a>
+                <a href=""><img class="lazy" data-original="../images/ban01.jpg" alt=""></a>
+                <a href=""><img class="lazy" data-original="../images/ban02.jpg" alt=""></a>
+                <a href=""><img class="lazy" data-original="../images/ban03.jpg" alt=""></a>
+                <a href=""><img class="lazy" data-original="../images/ban04.jpg" alt=""></a>
+                <a href=""><img class="lazy" data-original="../images/ban01.jpg" alt=""></a>
+                <a href=""><img class="lazy" data-original="../images/ban06.jpg" alt=""></a>
             </div>
-    
             <span>&lt;</span>
             <span>&gt;</span>
-    
             <ul>
                 <li></li>
                 <li></li>
@@ -146,6 +149,7 @@
                 <li></li>
             </ul>
         </div>
+        
         <div class="menu">
             <ul>
                 <li>
@@ -233,13 +237,29 @@
                 <div class="flash_box clear_fix">
                     <!-- 倒计时 -->
                     <div class="seckill float_left">
-                        <p>10.00 场</p>
+                        <p><span id="t_diff">22:00</span> 场</p>
                         <img class="lazy" data-original="../images/seckill.jpg" alt="">
                         <div class="desc">距离结束还有</div>
                         <div class="time">
-                            <span>00</span>:<span>00</span>:<span>00</span>
+                            <span id="h"></span>:<span id="m"></span>:<span id="s"></span>
                         </div>
                     </div>
+
+                    <!-- <a href="" id="seckill_countdown" class="float_left">
+                        <div class="countdown_title">
+                            京东秒杀
+                        </div>
+                        <div>
+                            <div class="countdown_desc">
+                                <strong id="t_diff">22:00</strong>点场 倒计时
+                            </div>
+                            <span class="countdown_main">
+                                <span id="h" class="unit"></span>
+                                <span id="m" class="unit"></span>
+                                <span id="s"></span>
+                            </span>
+                        </div>
+                    </a> -->
                     <!-- 闪购列表 -->
                     <div class="flash_list float_left">
                         <div class="controls">
@@ -346,6 +366,58 @@
             <div id="banner_box">
                 <a href="">
                     <img class="lazy" data-original="../images/banner01.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- 智能 -->
+            <div id="intelligent">
+                <div class="head">
+                    <h2 class="hd_h2">智能</h2>
+                    <div class="more">
+                        <ul class="tabe_list">
+                            <li class="ht">
+                               热门
+                            </li>
+                            <li class="af">
+                                安防
+                             </li>
+                             <li class="cx">
+                                出行
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="intelligent clear_fix">
+                    <div class="span4 float_left">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img class="lazy" data-original="../images/zhineng_a.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="lazy" data-original="../images/zhineng_b.webp" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span16 float_left">
+                        <ul id="list">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="anfang">安防</div>
+                <div class="chuxing">出行</div>
+                
+
+            </div>
+
+             <!-- banner -->
+             <div id="banner_box">
+                <a href="">
+                    <img class="lazy" data-original="../images/banner04.jpg" alt="">
                 </a>
             </div>
 
@@ -588,54 +660,7 @@
                 </a>
             </div>
 
-            <!-- 智能 -->
-            <div id="intelligent">
-                <div class="head">
-                    <h2 class="hd_h2">智能</h2>
-                    <div class="more">
-                        <ul class="tabe_list">
-                            <li>
-                               热门
-                            </li>
-                            <li>
-                                安防
-                             </li>
-                             <li>
-                                出行
-                             </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="intelligent clear_fix">
-                    <div class="span4 float_left">
-                        <ul>
-                            <li>
-                                <a href="">
-                                    <img class="lazy" data-original="../images/zhineng_a.webp" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img class="lazy" data-original="../images/zhineng_b.webp" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="span16 float_left">
-                        <ul id="list">
-                            
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-             <!-- banner -->
-             <div id="banner_box">
-                <a href="">
-                    <img class="lazy" data-original="../images/banner04.jpg" alt="">
-                </a>
-            </div>
+            
 
             <!-- 搭配 -->
             <div id="match">

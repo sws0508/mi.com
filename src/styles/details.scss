@@ -33,8 +33,9 @@
                 padding: 32px 0 12px;
                 .img-left{
                     width: 560px;
-                    height: 566px;
-                    background: pink;
+                    height: 460px;
+                    position: relative;
+                    
                     .slide{
                         width: 100%;
                         height: 460px;
@@ -42,10 +43,24 @@
                         .imgbox{
                             width: 100%;
                             height: 100%;
-                            img{
+                            a{
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
                                 width: 100%;
                                 height: 100%;
+                                opacity: 0;
+                                border: black solid 1px;
+                                &:nth-child(1){
+                                    opacity: 1;
+                                }
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
+                           
                         }
                         span {
                             position: absolute;
@@ -72,7 +87,7 @@
                         }
                         ul {
                             position: absolute;
-                            bottom: -20px;
+                            bottom: -50px;
                             left: 50%;
                             transform: translateX(-50%);
                             height: 20px;
@@ -93,8 +108,34 @@
                                 }
                             }
                         }  
+                        #mirror-box{
+                            width: 100px;
+                            height: 100px;
+                            display: none;
+                            position: absolute;
+                            left: 0;    
+                            top: 0;
+                            background: greenyellow;
+                            opacity: .3;
+                            z-index: 99;
+                            overflow: hidden;
+                        }
+                        #show-box{
+                            position: absolute;
+                            display: none;
+                            width: 300px;
+                            height: 300px;
+                            top: 0;
+                            left: 570px;
+                            border: 1px solid pink;
+                            background-color: #fff;
+                            z-index: 99;
+                            background-size: 1680px 1380px;
+                            background-position: 0 0;
+                        }
                           
                     }
+                 
                 }
                 .product-con{
                     width: 600px;

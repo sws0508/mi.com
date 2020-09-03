@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>登录</title>
     <link rel="stylesheet" href="../styles/content.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/login.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2032331_9uzdighsb45.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2032331_shce8bqeh1.css">
+
+    <script src="../js/login.js" type="module"></script>
 </head>
 <body>
     <div id="login_header">
@@ -20,9 +22,9 @@
         <div class="layout">    
             <div id="mainbox">
                 <div class="nav_tabs">
-                    <a href="">账号登录</a>
+                    <a id="hl1" href="javascript:;">账号登录</a>
                     <span></span>
-                    <a href="">扫码登录</a>
+                    <a id="hl2" href="javascript:;">扫码登录</a>
                 </div>
                 <div class="loginbox">
                     <div class="login1">
@@ -30,11 +32,11 @@
                             <input class="username" type="text" placeholder="邮箱/手机号码/小米ID">
                             <input class="userpass" type="password" placeholder="密码">
                         </div>
-                        <!-- <div class="err_tip">
+                        <div class="err_tip" style="display: none;">
                             <em></em><span>手机号码格式错误</span>
-                        </div> -->
+                        </div>
                         <div class="btn_bg">
-                            <input type="button" value="登录">
+                            <input id="login_btn" type="button" value="登录">
                         </div>
                         <div class="other_panel">
                             <p>

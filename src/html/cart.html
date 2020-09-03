@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>购物车</title>
+
     <link rel="stylesheet" href="../styles/content.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/cart.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2032331_7hfgl3x48ni.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2032331_shce8bqeh1.css">
+
+    <script src="../js/cart.js" type="module"></script>
 </head>
 <body>
     <!-- 购物车头部 -->
@@ -43,7 +46,7 @@
             <div class="cart_wrap">
                 <div class="list_header">
                     <div class="col_check">
-                        <input type="checkbox" name="" id="">全选
+                        <input id="allcheck" type="checkbox" name="" id="">全选
                     </div>
                     <div class="col_img">图片</div>
                     <div class="col_name">商品名称</div>
@@ -52,105 +55,21 @@
                     <div class="col_total">小计</div>
                     <div class="col_action">操作</div>
                 </div>
+                <!-- 购物车列表 -->
                 <div class="list_body">
-                    <div class="list_item">
-                        <div class="item_box">
-                            <div class="col_check">
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div class="col_img">
-                                <a href="">
-                                    <img src="../images/b1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col_name">
-                                <h3><a href="">小米真无线蓝牙耳机 Air 2 白色</a></h3>
-                            </div>
-                            <div class="col_price">390元</div>
-                            <div class="col_num">
-                                <div class="change_num">
-                                    <a href="">-</a>
-                                    <input type="text" value="1">
-                                    <a href="">+</a>
-                                </div>
-                            </div>
-                            <div class="col_total">390元</div>
-                            <div class="col_action">
-                                <a href="">
-                                    <i class="iconfont icon-shanchu"></i>
-                                </a>
-                            </div>
-                        </div>
+                   
+                    
+                </div>
+                <div class="cart_bar clear_fix">
+                    <div class="section_left float_left">
+                        <a href="../html/index.html">继续购物</a>
+                        <span>
+                            共<em class="all_count"> 23 </em>件商品，已选择<em class="chk_count"> 0 </em>件
+                        </span>
                     </div>
-                    <div class="list_item">
-                        <div class="item_box">
-                            <div class="col_check">
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div class="col_img">
-                                <a href="">
-                                    <img src="../images/b2.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col_name">
-                                <h3><a href="">小米插线板（5位国标组合插孔） 纯白色</a></h3>
-                            </div>
-                            <div class="col_price">39元</div>
-                            <div class="col_num">
-                                <div class="change_num">
-                                    <a href="">-</a>
-                                    <input type="text" value="1">
-                                    <a href="">+</a>
-                                </div>
-                            </div>
-                            <div class="col_total">39元</div>
-                            <div class="col_action">
-                                <a href="">
-                                    <i class="iconfont icon-shanchu"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list_item">
-                        <div class="item_box">
-                            <div class="col_check">
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div class="col_img">
-                                <a href="">
-                                    <img src="../images/b1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col_name">
-                                <h3><a href="">小米真无线蓝牙耳机 Air 2 白色</a></h3>
-                            </div>
-                            <div class="col_price">390元</div>
-                            <div class="col_num">
-                                <div class="change_num">
-                                    <a href="">-</a>
-                                    <input type="text" value="1">
-                                    <a href="">+</a>
-                                </div>
-                            </div>
-                            <div class="col_total">390元</div>
-                            <div class="col_action">
-                                <a href="">
-                                    <i class="iconfont icon-shanchu"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart_bar clear_fix">
-                        <div class="section_left float_left">
-                            <a href="">继续购物</a>
-                            <span>
-                                共<em> 23 </em>件商品，已选择<em> 0 </em>件
-                            </span>
-                        </div>
-                        <div class="total_price float_right">
-                            合计：<i>0</i>元
-                            <a href="">去结算</a>
-                        </div>
+                    <div class="total_price float_right">
+                        合计：<i id="total">0</i>元
+                        <a href="">去结算</a>
                     </div>
                 </div>
             </div>

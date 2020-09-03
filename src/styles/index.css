@@ -13,7 +13,21 @@
   height: 100%;
 }
 
-#home .slide .imgbox img {
+#home .slide .imgbox a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+#home .slide .imgbox a:nth-child(1) {
+  opacity: 1;
+}
+
+#home .slide .imgbox a img {
   width: 100%;
   height: 100%;
 }
@@ -204,6 +218,7 @@ main #flashsale .flash_box .seckill .time span {
 main #flashsale .flash_list {
   margin-left: 14px;
   width: 978px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -313,4 +328,20 @@ main #phone .phone_box .span4 {
   width: 234px;
   height: 614px;
   background: blue;
+}
+
+main #intelligent .anfang {
+  width: 100%;
+  height: 614px;
+  background: pink;
+  display: none;
+  font-size: 30px;
+}
+
+main #intelligent .chuxing {
+  width: 100%;
+  height: 614px;
+  background: greenyellow;
+  display: none;
+  font-size: 30px;
 }

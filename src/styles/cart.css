@@ -181,10 +181,17 @@ html, body {
 }
 
 #mi_cart .cart_wrap .list_body .list_item .item_box .col_img a {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
   background: red;
+}
+
+#mi_cart .cart_wrap .list_body .list_item .item_box .col_img a img {
+  width: 100%;
+  height: 100%;
+  width: 80px;
+  height: 80px;
 }
 
 #mi_cart .cart_wrap .list_body .list_item .item_box .col_name {

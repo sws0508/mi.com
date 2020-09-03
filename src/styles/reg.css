@@ -262,6 +262,7 @@ html {
   line-height: 20px;
   padding: 10px;
   color: #333333;
+  outline: none;
   border: 0;
 }
 

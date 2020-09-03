@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/content.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/reg.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2032331_wfx6d5rizj.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2032331_shce8bqeh1.css">
 
     <script src="../js/reg.js" type="module"></script>
 </head>
@@ -48,12 +48,12 @@
                     </div>
                     <div class="reg_step2">
                         <div class="step2_title">
-                            <div>我们已经发送一条验证短信至<span>+86 18370139930</span></div>
+                            <div>我们已经发送一条验证短信至<span id="ph">+86 18370139930</span></div>
                             <p>请输入短信中的验证码 </p>
                         </div>
                         <div class="inputsend">
                             <input id="server_code" type="text" placeholder="请输入验证码">
-                            <span><a href="">重新发送<i>(60s)</i></a></span>
+                            <span><a href="">重新发送<i id="Interval">(100s)</i></a></span>
                         </div>
                         <div class="err_tip err2" style="display: none;">
                             <em></em><span></span>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="reg_step3">
                         <div class="step3_title">
-                            <div>您注册的手机号码为<span>18370139930</span></div>
+                            <div>您注册的手机号码为<span id="ph2">18370139930</span></div>
                             <p>请设置您的密码：</p>
                         </div>
                         <div class="input_box">
